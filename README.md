@@ -15,3 +15,6 @@ uv pip install -r requirements.txt
 
 python rest_api_pipeline.py
 <br>dlt pipeline jsonplaceholder_api show
+
+
+TODO - https://github.com/hnawaz007/pythondataanalysis/blob/main/ETL%20Pipeline/dltproject/fxrate_pipeline.py
