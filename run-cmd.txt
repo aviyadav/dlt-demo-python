@@ -1,0 +1,15 @@
+
+
+uv venv
+source .venv/bin/activate
+
+uv pip install dlt
+dlt --version
+dlt init rest_api duckdb
+
+uv pip install -r requirements.txt
+uv pip install "dlt[duckdb]" streamlit
+uv pip freeze > requirements.txt
+
+python rest_api_pipeline.py
+dlt pipeline jsonplaceholder_api show
